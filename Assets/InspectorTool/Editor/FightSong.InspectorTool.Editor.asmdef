@@ -1,0 +1,6 @@
+{
+  "name": "FightSong.InspectorTool.Editor",
+  "rootNamespace": "FightSong.InspectorTool",
+  "includePlatforms": ["Editor"],
+  "autoReferenced": true
+}
