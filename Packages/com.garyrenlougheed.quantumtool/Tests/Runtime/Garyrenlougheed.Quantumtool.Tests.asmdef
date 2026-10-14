@@ -1,0 +1,11 @@
+{
+    "name": "Garyrenlougheed.Quantumtool.Tests",
+    "references": [
+        "Garyrenlougheed.Quantumtool"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}

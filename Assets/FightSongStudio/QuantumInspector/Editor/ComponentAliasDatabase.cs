@@ -13,7 +13,9 @@ namespace FightSong.InspectorTool
             get
             {
                 var path = AssetDatabase.GUIDToAssetPath("3ca38bcfb557abe479ff97ae7a03c65f");
-                return string.IsNullOrEmpty(path) ? "Assets/QuantumInspector/Editor/ComponentAliases.asset" : path;
+                // Git packages are immutable; keep editable data in the consuming project.
+                return !string.IsNullOrEmpty(path) && path.StartsWith("Assets/", StringComparison.Ordinal)
+                    ? path : "Assets/QuantumInspector/Editor/ComponentAliases.asset";
             }
         }
         [Serializable]

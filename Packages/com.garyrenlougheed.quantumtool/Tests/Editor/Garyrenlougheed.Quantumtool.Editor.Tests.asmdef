@@ -1,0 +1,14 @@
+{
+    "name": "Garyrenlougheed.Quantumtool.Editor.Tests",
+    "references": [
+        "Garyrenlougheed.Quantumtool.Editor",
+        "Garyrenlougheed.Quantumtool"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}

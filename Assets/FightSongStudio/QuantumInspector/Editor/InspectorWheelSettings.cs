@@ -17,13 +17,15 @@ namespace FightSong.InspectorTool
     [CreateAssetMenu(menuName = "Quantum Inspector/Settings", fileName = "QuantumInspectorWheelSettings")]
     public sealed class InspectorWheelSettings : ScriptableObject
     {
-        public const string CleanDefaultsPath="Assets/FightSongStudio/QuantumInspector/Editor/QuantumInspectorCleanDefaults.asset";
+        public static string CleanDefaultsPath => AssetDatabase.GUIDToAssetPath("13d446c97f7601345a49d9a27399adde");
         public static string DefaultPath
         {
             get
             {
                 var path = AssetDatabase.GUIDToAssetPath("3435383ee11b2a54cbd69ee5ade6b7f8");
-                return string.IsNullOrEmpty(path) ? "Assets/QuantumInspector/Editor/QuantumInspectorWheelSettings.asset" : path;
+                // Git packages are immutable; keep editable data in the consuming project.
+                return !string.IsNullOrEmpty(path) && path.StartsWith("Assets/", StringComparison.Ordinal)
+                    ? path : "Assets/QuantumInspector/Editor/QuantumInspectorWheelSettings.asset";
             }
         }
         [Header("Font sizes")]

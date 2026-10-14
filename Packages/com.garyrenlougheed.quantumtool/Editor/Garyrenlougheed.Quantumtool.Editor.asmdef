@@ -1,0 +1,10 @@
+{
+    "name": "Garyrenlougheed.Quantumtool.Editor",
+    "references": [
+      "Garyrenlougheed.Quantumtool"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}
