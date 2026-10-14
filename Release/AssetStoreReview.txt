@@ -1,0 +1,119 @@
+QUANTUM INSPECTOR 1.0.0 - PUBLISHER RELEASE REVIEW
+Reviewed 2026-10-13. Status: local release candidate; not submitted or approved.
+Developed by Gary Lougheed & Astra
+Support: gbear9551@gmail.com
+
+OFFICIAL SOURCES
+Unity Asset Store Submission Guidelines (page updated May 20, 2026):
+https://assetstore.unity.com/publishing/submission-guidelines
+Upload workflow:
+https://docs.unity.com/en-us/asset-store/publishing/asset-packages/upload
+Submission workflow:
+https://docs.unity.com/en-us/asset-store/publishing/asset-packages/submit
+
+POLICY CHECKPOINTS
+Guidelines 2.1: one organized root, no redundant content, paths below 150 characters.
+2.3: comprehensive setup documentation for code/configurable products; PDF is an
+accepted format, not the only required format.
+2.5.g: no reflected Unity Editor internal APIs.
+2.5.1.a: place menus under an existing menu or Tools.
+1.1/3.1: disclose dependencies, tested compatibility and material limitations.
+1.2: identify bundled third-party content and include required license notices.
+1.6: disclose AI-assisted functional content in the AI description field.
+4.1: supply an active support email and maintained publisher website.
+Unity review remains authoritative; local checks do not guarantee acceptance.
+
+COMPLETED IN THIS REVIEW
+- Moved core Editor assets through AssetDatabase into the existing package root,
+  retaining GUIDs. Root: Assets/FightSongStudio/QuantumInspector.
+- Kept Editor-only code/assembly separate from Demo runtime scripts.
+- Replaced reflected internal docking with a public-API workspace setup guide,
+  with the publisher's approval. Existing docks remain in place.
+- Moved end-user menu commands to Tools > Quantum Inspector.
+- Added Documentation: five-page offline PDF, QuickStart, Support, CHANGELOG and
+  Third-Party Notices. Reviewed rendered PDF pages.
+- Added the requested footer credit in Wheel and Graph modes.
+- Publisher confirmed permission to redistribute demo content. No separately
+  bundled third-party library was identified in the source audit.
+- External asset dependency audit: only URP/Core package references; no assets
+  outside the selected root. No missing .meta files, excessive paths, executable
+  files or source declarations lacking namespaces were found. FixtureUsage.cs is
+  intentionally comment-only sample content.
+- The demo uses generated procedural meshes/materials; it is an Editor-tool
+  sample, not a standalone art pack. Explain this if an art-specific check flags it.
+
+VALIDATION EVIDENCE
+Unity 6000.3.7f1, Windows; project URP 17.3.0.
+Compilation passed; current Console: 0 errors, 0 warnings.
+Navigation verification: passed, including 84,000 wheel rotation samples.
+Project-selection follow-up: textures, folders, ScriptableObjects and prefabs
+update the graph with Investigation Lock enabled. Explicit selection locking and
+following the latest selection after unlock are covered by the regression checks.
+Graph verification: passed, including 10,026 expanded array nodes.
+Footer/responsive checks: passed at widths 400 and 1100; Graph credit visible.
+Workspace guide: five shortcuts/actions present; existing window bounds preserved.
+Native Inspector follow-up: Wheel/Graph search synchronization, native filtering,
+exact-instance auto-scroll, no matches, clearing and locked-Inspector isolation
+passed in Unity 6000.3.7f1. Native component editors are retained. The adapter uses
+public UI Toolkit operations with guarded native row-name matching; validate this
+integration on each additional Unity version before claiming support.
+LocalAudit.json contains the current dependency/path/metadata check results.
+The full Asset Store validator was NOT run: an open scene is unsaved. Its scene
+service switches scenes and requests saves. No user scene was saved or discarded.
+No clean-project package import or cross-platform testing has been completed.
+
+PACKAGE CONTENTS AND REPRODUCTION
+Customer root:
+  Assets/FightSongStudio/QuantumInspector/
+    Editor/         Core tool, styles, settings and workspace setup guide
+    Demo/           Laboratory scene, runtime code, Editor builders and examples
+    Documentation/  Offline PDF, quick start, support, changelog and notices
+
+Release/BuildPackage.cs exports explicit customer files to:
+  output/package/QuantumInspector-1.0.0.unitypackage
+It excludes development verification helpers and ignored '~' folders and does not
+include package dependencies. PackageContents.txt records the exported files.
+Do not upload the whole development project. Exclude Release/, output/, .agents/,
+.release-tools/, old Assets/InspectorTool/ReferenceImage/, Asset Store Tools,
+Pipeline, project settings, backups, caches and verification helpers.
+Do not embed the release .unitypackage inside the customer Assets folder.
+
+Run publisher scripts via Unity CLI from the project root, targeting this project:
+  unity command run_script --file Release/InspectRelease.cs --entry FightSong.ReleaseChecks.InspectRelease.Run --caller plugin --skill unity-pipeline --project-path C:/Users/gbear/UnityGames/QuantumInspector --format json
+  unity command run_script --file Release/BuildPackage.cs --entry FightSong.ReleaseChecks.BuildPackage.Run --caller plugin --skill unity-pipeline --project-path C:/Users/gbear/UnityGames/QuantumInspector --format json
+  unity command run_script --file Release/RunStoreValidator.cs --entry FightSong.ReleaseChecks.RunStoreValidator.Run --caller plugin --skill unity-pipeline --project-path C:/Users/gbear/UnityGames/QuantumInspector --format json
+The validator script requires the installed Asset Store Tools package. It refuses
+to switch away from dirty/unsaved scenes. Its category is tools/utilities; match
+the final Publisher Portal category when running the final validator.
+PDF source is Release/build_manual.py; its local dependencies live in the ignored
+.release-tools directory. These generation libraries are not customer dependencies.
+
+BEFORE SUBMISSION
+[ ] Import the exported package into a clean Unity 6000.3 URP project. Confirm
+    compilation, demo appearance, selection navigation, bookmarks, setup guide and
+    Console. Check the core separately without Demo for non-URP use.
+[ ] Run the installed Asset Store validator on the actual upload contents and
+    resolve errors; review any category-specific warnings. Record results.
+[ ] Review the listing in your own words: Editor-only tool; tested Unity version;
+    URP 17.3.0 sample dependency; manual native docking with setup guide; no claim
+    of verified macOS/Linux, older Unity, Built-in or HDRP demo support.
+[ ] Supply the publisher website, product description, category, price, current
+    screenshots/key images and version notes in Publisher Portal. No website or
+    store artwork was supplied during this review.
+[ ] Complete the AI description truthfully. Known assistance: OpenAI Codex helped
+    develop and revise C# Editor code, UI styling, verification and documentation.
+    Changes were integrated with selection/navigation, responsive headers, the
+    workspace guide and the sample, then compiled and tested in Unity. Review the
+    history and add any other AI tools/content; the publisher's 'Yes' confirmed
+    redistribution rights but did not enumerate all content-generation tools.
+[ ] Confirm the third-party inventory is complete, including any material added
+    after this review. Apply the appropriate Asset Store license in the listing.
+[ ] Review the release candidate and submit through the publisher workflow.
+
+Nothing has been uploaded, published, or sent to a third party.
+
+Project pane follow-up verification: navigation regression passed, including
+folder-tree click handling, repeated asset clicks, explicit selection lock and
+graph Investigation Lock. Live Project-window clicks through Unity CLI confirmed
+the left folder tree updates Quantum while the native active asset stays the
+same, and the right pane returns Quantum to that already-selected asset.

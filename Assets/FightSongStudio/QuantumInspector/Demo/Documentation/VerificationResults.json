@@ -1,0 +1,53 @@
+{
+  "verifiedDate": "2026-10-13",
+  "environment": "Windows Unity Editor 6000.3.7f1, Universal Render Pipeline 17.3.0",
+  "scene": "Assets/FightSongStudio/QuantumInspector/Demo/Scenes/Demo.unity",
+  "savedSceneAudit": "ValidationReport.json",
+  "regeneration": {
+    "repeatedBuildsMatch": true,
+    "semanticHierarchyFingerprint": "33e38e33bc1e3cde70dabb7cc7a158d91dd6987910e28fca4c0727dbd2daa44d",
+    "gameObjects": 391,
+    "components": 1196,
+    "materials": 10,
+    "prefabAssets": 2,
+    "previousSceneBackup": "../Editor/Backups~/Demo.previous.unity",
+    "notes": "Final builds include five explicit URP light-data components, preserving counts across scene reload. Fingerprint covers hierarchy structure, transforms, active states, component types, and serialized demo reference paths, not Unity file IDs or all asset bytes."
+  },
+  "playMode": {
+    "frameChangeWaitPassed": true,
+    "waitInitialFrame": 37194,
+    "waitFinalFrame": 37222,
+    "motionBaselineFrame": 76841,
+    "motionFramesAdvanced": 6641,
+    "reactorRotorMoved": true,
+    "robotJointMoved": true,
+    "simulationTimeAdvanced": true,
+    "pauseHeldAcrossEditorCommands": true,
+    "pausedSimulationTime": 310.5193,
+    "resumedSimulationTime": 340.4474,
+    "powerOutputsObserved": [1.0, 0.15, 0.65],
+    "reactorViewPositionError": 0.0000116800775,
+    "controlsTestMethod": "Invoked the same public controller methods used by the IMGUI buttons; inspected the rendered controls. Physical mouse clicking remains a manual release check.",
+    "finalCompilationSmokeTestFrame": 10704,
+    "finalCompilationSmokeTestSimulationTime": 40.47597
+  },
+  "quantumInspectorIntegration": {
+    "orbitalProviderSubsystems": 7,
+    "crossReferenceShowcaseGraphNodes": 10,
+    "crossReferenceShowcaseSerializedOverlayEdges": 5,
+    "graphExpansionCompleted": true,
+    "projectProviderFoundDemoScene": true,
+    "method": "Existing tool providers with temporary in-memory settings; no main tool source changes."
+  },
+  "compilation": {"succeeded": true, "errors": 0, "warnings": 0},
+  "consoleAfterPlayChecks": {"currentErrors": 0, "currentWarnings": 0},
+  "screenshots": ["Images/LaboratoryPlayMode.png", "Images/ReactorPlayMode.png", "Images/LaboratoryOverview.png"],
+  "allFiveCameraViewpoints": "CameraTourVerification.json",
+  "outstanding": [
+    "Fresh-project package import and removal test",
+    "Representative target-hardware profiling",
+    "Physical button interaction and accessibility review",
+    "Additional advertised Unity versions, pipelines, and platforms",
+    "Final Asset Store export and marketing review"
+  ]
+}

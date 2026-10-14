@@ -1,0 +1,32 @@
+NATIVE UNITY INSPECTOR COMPONENT SEARCH
+
+When the Unity Inspector displays a GameObject, Quantum adds a Components search
+field above its contents. Search by component type, alias or category. Multiple
+words narrow the results. The count shows visible components / total components.
+Clear the field to restore all component rows. The filter is local to that Inspector
+and resets when it displays another object. Existing Unity and custom component
+editors remain in place; filtering does not disable or remove components.
+
+Searching the Orbital Wheel's component list synchronizes its matches to the
+native Inspector. Graph searches filter the inspected GameObject's components by
+type, alias or category. Graph matches on other objects or relationships remain
+available through the graph's own search and Next match navigation.
+
+Selecting a component in either Quantum view clears a conflicting native filter
+and scrolls its exact component row into view. Repeated components of the same
+type are distinguished. The normal Inspector expands the selected component.
+Use Locate in Unity Inspector to explicitly open/focus the native Inspector.
+
+Typing directly in the native search filters that Inspector; it does not rewrite
+Quantum's search. Inspectors locked to other objects are not retargeted or filtered
+by a Quantum search. Quantum's own selection lock also continues to apply.
+
+Compatibility: verified with Unity 6000.3.7f1. The adapter uses public UI Toolkit
+APIs and checks the native Inspector's row names to identify objects. It does not
+use reflection into private Unity APIs. Native visual-tree structure is not a
+stable extension contract across Unity versions: if the expected structure is
+unavailable the adapter leaves the Inspector untouched. The search appears only
+when a supported GameObject Inspector is present, not on asset/import inspectors.
+
+Support: gbear9551@gmail.com
+Developed by Gary Lougheed & Astra

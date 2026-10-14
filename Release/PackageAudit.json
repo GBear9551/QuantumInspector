@@ -1,0 +1,10 @@
+{
+  "archive": "output\\package\\QuantumInspector-1.0.0.unitypackage",
+  "files": 109,
+  "bytes": 3239990,
+  "sha256": "75ff6bc39119f70d924c7141fe3d61ea74b2b388bfaf2a7d71f4ee47492ec32f",
+  "trackedAssetGuidsPreserved": 43,
+  "manifestAndContentsMatch": true,
+  "singleRoot": true,
+  "developmentHelpersExcluded": true
+}

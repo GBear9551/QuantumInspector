@@ -1,0 +1,119 @@
+QUANTUM INSPECTOR — COSMIC NEBULA IMPLEMENTATION REVIEW
+13 October 2026 (America/Los_Angeles)
+
+Open: Tools > Quantum Inspector > Open > Clustered Graph.
+Leave Lock selection off to follow Project assets, folders and Hierarchy GameObjects,
+including while Investigation Lock is enabled. Direct external component selections
+still require Investigation Lock to be off.
+Graph Mode no longer enables Investigation Lock on entry. Its initial personal
+preference is unlocked; an explicitly chosen lock is remembered.
+
+IMPLEMENTED
+UI Toolkit, Unity 6000.3.7f1, existing Editor-only assembly and actual graph model.
+Cosmic Nebula tokens; cached seeded cloud/star field; measured family contours;
+owner instrument arcs and distinct silhouette; opaque gradient node surfaces;
+typed paths, selection rings, OFF/MISSING/PIN labels; bounded selected-path accent.
+No layout engine, scene effect, scene transform or player dependency was added.
+
+Hierarchy selection changes owner/context. Component selection selects the exact
+component under its owner. Project selection changes folder context and reveals
+the selected file after discovery. Internal graph selection preserves the root.
+An identity-only poll catches selection notifications deferred by the Editor.
+
+Full / Reduced / Off and Low / Balanced / Cinematic are independent choices.
+Personal graph appearance/motion/lock/ambient choices use EditorPrefs overrides,
+not serialized shared-preset values. Shared color tokens remain explicitly editable.
+Expansion 320 ms; collapse/ordinary transitions 240 ms; focus 340 ms; hover 110 ms;
+selection 180 ms. A single 520 ms selection-path accent means user feedback,
+not runtime execution, events or traffic. No perpetual edge particles.
+Ambient is opt-in, background-only, +/-4 horizontal / +/-3 vertical logical pixels
+over 32/38 seconds; locked ambient requires its separate opt-in. Reduced/Off stop it.
+
+Previews have fixed reserved bounds and bounded retries. Persistent prefab owners
+and assets can show actual previews; scene owners use an honestly labelled type
+icon. Calling Unity's scene-owner asset-preview renderer caused a measured 1.56 s
+stall during review; that path was removed and guarded by a regression assertion.
+
+EXECUTED CHECKS
+- Compile: successful, no compilation errors or warnings from this pass.
+- QuantumNebulaVerification: 29 assertions passed (Hierarchy/component/Project
+  selection, repeated identity, all palettes/quality tiers, lock/pins, motion-mode
+  interruption, hidden suspension, preview bounds, serialized preset invariance,
+  scene-dirtiness invariance, safe scene-owner fallback).
+- QuantumGraphConstellationVerification: 50 assertions passed, including stable
+  packing/growth, locked pending topology, elapsed-time interruption, exact targets,
+  repeated components, 42-component Dense fixture, leaf files and preview fallback.
+- QuantumGraphVerification: passed; 10,026 expanded array nodes, true references,
+  hierarchy/project histories, grouping drag, parameter editor, zoom and persistence.
+- InspectorWheelNavigationVerification: passed; 84,000 rotation samples plus
+  external selection/Project navigation and locks.
+- QuantumGraphEdgeVerification: passed; actual Painter2D solid/dashed/directional
+  geometry, thickness at four zoom levels, selection and collapsed visibility.
+- Existing pointer/long-title harness: passed. Width 640 grew to 790, shrank to 190;
+  the final wrapped title measured 126 px with 126 px available. Size persistence,
+  refresh and restore sizing passed. Test windows were closed afterward.
+- 1,000 settled Tick calls produced zero view updates in each profile. Allocation
+  counter control failed on this Editor, so no zero-allocation claim is made.
+
+PERFORMANCE — FINAL RECORDED RUNS
+i9-12900, RTX 3070, 65,222 MB RAM; Windows; Unity 6000.3.7f1.
+Viewport 1180 x 506 logical pixels, Cosmic Nebula / Balanced, motion Off.
+Small is the actual SHOWCASE_MultiComponentObject; Dense is the real Dense prefab;
+Stress is an isolated 2,000-component synthetic fixture, never substituted into
+the actual user's graph. Numbers are CPU measurements in this Editor session.
+
+Fixture       Nodes/edges   Visible cards/edges*  Pan avg/max ms  Art max ms
+Small         13 / 20       4 / 7                 0.049 / 0.066   0.637
+Dense         48 / 89       20 / 65               0.289 / 0.448   0.306
+Stress        2008 / 4499   45 / 733              1.702 / 3.059   9.366
+
+*At inspection zoom. Overview cards/edges: 5/8, 6/10, 8/14 respectively.
+Cached backdrop generation: 9.73 / 9.92 / 9.47 ms respectively (once per changed
+palette token/quality, not per frame). Maximum scheduled Tick: 11.16 / 10.92 / 8.37 ms.
+Stress text preparation: 22 slices, maximum 4.046 ms; final packing is not preemptible.
+Stress maximum decoration submission 0.044 ms, filaments 9.300 ms, point mesh
+submission 0.0004 ms in the sampled draw frames. These maxima are independent.
+The art timer includes the graph draw callback; native asynchronous tessellation,
+GPU time, native text rendering and end-to-end frame time are NOT measured.
+
+Review reduced the backdrop from an initial ~56 ms generation and batches distant
+component markers. Dense paths now clip offscreen dash geometry and omit extra
+glow first. No members are capped. Timing varied materially across runs; stress
+art callbacks of 23–34 ms were also observed during tuning. This is not a 60 FPS
+guarantee. Low and Cinematic switching was checked, but only Balanced was profiled.
+
+SELF-REVIEW AND REMAINING VERIFICATION
+Art direction: the implemented shape/color vocabulary separates owner, family,
+component and selection; atmosphere is deliberately below information luminance.
+Actual screenshot-based composition approval remains unverified.
+Interaction: selection sync, existing locks, pins, all-member discovery, histories,
+drag/resize and preview invariance passed the live Editor assertions above.
+Motion: interrupted geometry commits and Reduced/Off controls passed. Subjective
+timing, visual edge attachment throughout a captured transition, and the new art
+during live Play Mode still need a foreground visual review.
+Rendering: separate cached atmosphere and bounded accents; no generator mutates
+VisualElement styles or layout. Hidden work is suspended; resources are disposed
+on window teardown. Cold setup/preview APIs and dense filaments can still spike.
+Accessibility: text/state labels and shapes supplement hue; minimum title scale
+is 11 logical px. Token contrast against #152034 is 14.09:1 primary and 7.01:1
+supporting text; these are calculated token ratios, not screenshot certification.
+Automatic OS reduced-motion detection is not implemented; in-tool controls work.
+
+The Windows capture helper returned an unrelated foreground application and failed
+twice to activate the Unity window (“failed to activate captured window”). No new
+Cosmic screenshot or video is supplied. Actual small-dock/high-DPI pixel sharpness,
+light-editor-chrome appearance, long-name crowding in dense overviews, real missing-
+script appearance and subjective motion remain unverified visually. Historical
+screenshots in ClusterMotionGuide.md predate this pass.
+
+Reproduce via the verification methods under Assets/InspectorTool/Editor/Verification.
+QuantumGraphPresentationVerification.Begin(0), Begin(42), Begin(2000) select the
+Small/Dense/Stress profiles; allow an Editor UI frame, then call Complete().
+The bridge has a five-second main-thread response limit: run suites separately.
+All temporary verification windows/callbacks created for this pass were cleaned up.
+
+SOURCE REFERENCES
+Unity 6.3 generateVisualContent (read-only drawing / explicit repaint):
+https://docs.unity3d.com/6000.3/Documentation/ScriptReference/UIElements.VisualElement-generateVisualContent.html
+W3C interaction-animation control principle (no accessibility certification claimed):
+https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html

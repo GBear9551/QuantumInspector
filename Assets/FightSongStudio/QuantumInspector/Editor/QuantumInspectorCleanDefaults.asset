@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25cfc5dc93b81cb498d02f2e4b0d7a93, type: 3}
+  m_Name: QuantumInspectorCleanDefaults
+  m_EditorClassIdentifier: FightSong.InspectorTool.Editor::FightSong.InspectorTool.InspectorWheelSettings
+  MaximumVisibleNodes: 5
+  NodeSize: 1
+  OrbitRadius: 220
+  Layouts: 2
+  WideResearchPanel: 0
+  ResearchPanelWidth: 0
+  graphLockDefault: 0
+  graphMotionDefault: 0
+  graphPaletteDefault: 3
+  graphDotSizeDefault: 2
+  graphShowAuxiliaryDefault: 0
+  Nebula:
+    Space: {r: 0.02745098, g: 0.043137256, b: 0.09411765, a: 1}
+    Void: {r: 0.011764706, g: 0.023529412, b: 0.0627451, a: 1}
+    Indigo: {r: 0.08235294, g: 0.17254902, b: 0.34509805, a: 1}
+    Violet: {r: 0.4117647, g: 0.25490198, b: 0.65882355, a: 1}
+    Teal: {r: 0.13725491, g: 0.37254903, b: 0.44705883, a: 1}
+    Text: {r: 0.9019608, g: 0.9372549, b: 1, a: 1}
+    Supporting: {r: 0.60784316, g: 0.67058825, b: 0.77254903, a: 1}
+    Surface: {r: 0.047058824, g: 0.07450981, b: 0.15294118, a: 1}
+    SurfaceLight: {r: 0.08235294, g: 0.1254902, b: 0.20392157, a: 1}
+    Scripts: {r: 0.40784314, g: 0.9647059, b: 0.78039217, a: 1}
+    Rendering: {r: 0.5568628, g: 0.6784314, b: 1, a: 1}
+    Physics: {r: 1, g: 0.78039217, b: 0.5294118, a: 1}
+    Audio: {r: 0.80784315, g: 0.59607846, b: 1, a: 1}
+    Neutral: {r: 0.7019608, g: 0.7490196, b: 0.8352941, a: 1}
+  GraphIncludePackages: 0
+  GraphProjectGrouping: 0
+  GraphOverlays: 0
+  GraphNodeWidth: 180
+  GraphFontSize: 13
+  GraphLinkThickness: 2
+  GraphNodeGap: 28
+  GraphMinimumClusterRadius: 140
+  GraphBaseDistance: 150
+  GraphSafetyGap: 55
+  GraphBranchLength: 240
+  GraphItemsPerTick: 80
+  GraphWorkMilliseconds: 4
+  GraphCategoryRules: []
+  SnapToSlots: 1
+  Momentum: 1
+  KeyboardNavigation: 1
+  ScrollSensitivity: 0.5
+  Smoothing: 12
+  MomentumFriction: 7
+  SearchReferences: 0
+  ShowRelationshipOverlay: 1
+  Relationships: 63
+  MaxPropertiesPerObject: 10000
+  IncomingScanBatch: 35
+  ReducedMotion: 0
+  AnimationIntensity: 0.65
+  ProjectSelectionIntensity: 0.2
+  ClickReaction: 0.45
+  NavigationGlow: 0.2
+  FocusTransitions: 1
+  FocusTransitionDuration: 0.55
+  NodeArrivalDistance: 60
+  BobAmplitude: 2.6
+  BobSpeed: 0.65
+  MicroDrift: 1.1
+  SpringStrength: 150
+  SpringDamping: 0.68
+  GlowStrength: 1
+  ShowGrid: 1
+  ShowParticles: 1
+  FramesPerSecond: 30
+  OrbitColor: {r: 0.12, g: 0.75, b: 1, a: 1}
+  AccentColor: {r: 0.7, g: 0.3, b: 1, a: 1}

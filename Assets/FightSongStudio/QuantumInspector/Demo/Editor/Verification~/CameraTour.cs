@@ -1,0 +1,10 @@
+var animator=UnityEngine.Object.FindFirstObjectByType<FightSongStudio.QuantumInspector.Demo.DemoLabAnimator>();
+var entry=new UnityEditor.SerializedObject(animator).FindProperty("views").GetArrayElementAtIndex(animator.ViewIndex);
+var target=entry.FindPropertyRelative("position").vector3Value;
+var lookAt=entry.FindPropertyRelative("lookAt").vector3Value;
+float positionError=UnityEngine.Vector3.Distance(UnityEngine.Camera.main.transform.position,target);
+float angleError=UnityEngine.Quaternion.Angle(UnityEngine.Camera.main.transform.rotation,UnityEngine.Quaternion.LookRotation(lookAt-UnityEngine.Camera.main.transform.position));
+if(positionError>.05f || angleError>.1f)throw new System.Exception("Camera did not settle: "+positionError+", "+angleError);
+int checkedView=animator.ViewIndex;
+animator.NextView();
+return new {checkedView,positionError,angleError,nextView=animator.ViewIndex,settleAfter=UnityEngine.Time.time+3};

@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "new-unity-project": {
+      "source": "Unity-Technologies/skills",
+      "sourceType": "github",
+      "skillPath": "skills/new-unity-project/SKILL.md",
+      "computedHash": "66d70c59d0a5ee97104f95c022a86517487f353d547c2ba858a6eaa4e03b41c3"
+    }
+  }
+}

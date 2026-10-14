@@ -1,0 +1,51 @@
+{
+    "unityVersion": "6000.3.7f1",
+    "renderPipeline": "Universal Render Pipeline 17.3.0",
+    "scenePath": "Assets/FightSongStudio/QuantumInspector/Demo/Scenes/Demo.unity",
+    "hierarchyFingerprint": "33e38e33bc1e3cde70dabb7cc7a158d91dd6987910e28fca4c0727dbd2daa44d",
+    "gameObjects": 391,
+    "components": 1196,
+    "maximumDepth": 8,
+    "wideParents": 32,
+    "multiComponentObjects": 307,
+    "crossObjectReferences": 436,
+    "missingScripts": 0,
+    "missingReferences": 0,
+    "nullDemoReferences": 0,
+    "activeLights": 5,
+    "materials": 10,
+    "prefabs": 2,
+    "stressSubtreeObjects": 62,
+    "nestedPrefabInstances": 2,
+    "subsystems": [
+        "00_LaboratoryInfrastructure",
+        "01_QuantumReactor",
+        "02_RoboticsWorkshop",
+        "03_ResearchChambers",
+        "04_HolographicControlCenter",
+        "05_EnvironmentalSystems",
+        "06_DemoDocumentation"
+    ],
+    "denseGroups": [
+        "Floors (26)",
+        "ContainmentNodes (25)",
+        "02_RoboticsWorkshop (50)",
+        "03_ResearchChambers (40)",
+        "04_HolographicControlCenter (41)",
+        "05_EnvironmentalSystems (43)",
+        "NavigationExamples (29)"
+    ],
+    "showcaseObjects": [
+        "SHOWCASE_DeepHierarchy",
+        "SHOWCASE_ManySiblings",
+        "SHOWCASE_MultiComponentObject",
+        "SHOWCASE_CrossReferencedSystems",
+        "SHOWCASE_EmptyGameObject",
+        "SHOWCASE_DisabledObject",
+        "SHOWCASE_NestedPrefab",
+        "SHOWCASE_LargeCluster"
+    ],
+    "externalAssetDependencies": [],
+    "hierarchyRequirementsMet": true,
+    "sceneSaved": true
+}

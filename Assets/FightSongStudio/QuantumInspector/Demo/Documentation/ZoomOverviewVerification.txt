@@ -1,0 +1,47 @@
+Semantic zoom verification - 13 October 2026
+
+Unity 6000.3.7f1; Windows; Intel Core i9-12900; NVIDIA RTX 3070;
+65,222 MB system memory. UI Toolkit, Cosmic Nebula, Balanced quality.
+
+Implemented: cards fade and contract into selectable round dots below their
+real family/containing-folder header. Semantic zoom range 78%-38%; Full settles
+in 180 ms; Reduced/Off settle immediately. Zoom floor remains 0.5%.
+Counts, identity, saved graph positions, expansion and pins are preserved.
+Selected dots have rings, pins have lower bars, disabled dots are hollow and
+missing components have crossed hollow dots. Context actions and double-click
+focus remain available. Selection details retain the full component name.
+
+Passed in the running Editor:
+- Real Dense prefab: 48 nodes / 89 edges, 42 dots and 6 owner/family cards.
+- Dense checked at 1180x650 and 860x600 window sizes.
+- Synthetic stress: 2,008 nodes / 4,499 edges, all 2,000 instance dots beneath
+  8 headers at 860x600; graph viewport approximately 860x409 logical pixels.
+- Every displayed dot hit-tests to its exact instance, including duplicates.
+- Complete family footprints fit without overlap in those fixtures.
+- Selected pinned member remains a dot; double-click restores its full card.
+- Direct dot dragging follows the pointer; panning moves packed dots.
+- Deterministic distinct dot slots, interrupted/reversed zoom, Reduced/Off
+  settlement, deliberate collapse hiding, original positions/pins preserved.
+- 1,000 idle ticks produced zero view updates after settlement.
+- Unity compilation: zero errors/warnings. No new Console errors/warnings.
+
+Stress overview pan CPU binding: 30 samples, average 5.458 ms, maximum 5.991 ms.
+Stress inspection pan: average 1.843 ms, maximum 2.486 ms.
+Maximum sampled art callback across the final stress session: 18.302 ms;
+dot mesh submission maximum 4.012 ms. These cover main-thread preparation and
+submission, not native tessellation, GPU time or end-to-end frame time. No FPS
+or zero-allocation claim: the allocation counter failed its control check.
+
+Small-window overflow found during verification was fixed by reserving whole
+family footprints. Ordinary filled dots use a smaller mesh than outlined states.
+
+Verification entry points: QuantumGraphOverviewVerification.Run(); for the
+live harness, QuantumGraphPresentationVerification.Begin(42 or 2000), allow
+an Editor frame, InspectView(window.Graph), then Complete() to restore state
+and close the temporary window. InspectView requires the harness's Off mode.
+
+Limitations: screenshot-based art review remains unverified; the available
+Pipeline screenshot API captures Scene/Game views, not this EditorWindow.
+Extremely long headers or more families than a dock can physically contain
+use the existing overflow placement; pan, search and explicit focus remain
+available. These checks do not certify every project, DPI or graph size.

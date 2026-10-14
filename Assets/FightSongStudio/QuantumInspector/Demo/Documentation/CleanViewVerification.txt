@@ -1,0 +1,46 @@
+Quantum Inspector clean view — 13 October 2026
+
+Environment: Unity 6000.3.7f1, Windows, UI Toolkit, existing URP 17.3.
+Recorded project machine: Intel i9-12900, RTX 3070, 65,222 MB RAM.
+Actual fixture: LivingLaboratory SHOWCASE_DenseComponentFixture.
+43 components / 49 graph nodes. Scripts 33, Physics 3, Rendering 3,
+Audio 3, Transform 1. No illustrative graph data was substituted.
+
+PASS: clean view is the default; secondary navigation, research details,
+footer, legend and relationship panel hidden. Settings remains accessible.
+PASS: Show auxiliary UI restores the panels and persists its personal preference.
+PASS: clean viewport 1269.333 x 618.667 logical pixels versus auxiliary
+949.333 x 315.333 at the same window size: 2.623275 times the graph area.
+This is a viewport-area measurement, not a frame-rate or usability claim.
+PASS: auxiliary toggle preserves camera, zoom and all node positions.
+PASS: Restore clean defaults resets the complete serialized preset plus
+personal graph preferences; current root, camera and pinned position survive.
+Defaults: Cosmic Nebula / Balanced / Full / Ambient off / 2x dots /
+auxiliary UI off / Investigation Lock and selection lock off.
+PASS: 29 Cosmic Nebula assertions covering real Hierarchy/component/Project
+selection, Full/Reduced/Off, interrupted commit, hidden suspension and themes.
+PASS: 2,000-member overview verification, distinct dots, stable packing,
+pins/layout, interruptible transition, Reduced/Off and collapse behavior.
+PASS: edge geometry at four zoom levels and distant-path clipping.
+PASS: category header and enclosure-background pointer dragging; 34 Scripts
+nodes move together, unrelated positions stay fixed, arrangement persists.
+PASS: dot diameter doubles at default and the size preference remains adjustable.
+PASS: eight floating-window resize handles, corner drag, minimum size,
+camera/selection preservation and 16-pixel research divider hit region.
+
+Visual review: actual owner/count, family/count, selection and disabled shapes
+remain visible; unnecessary metadata and aggregate edge badges are absent.
+Separated script dots avoid the previous merged appearance where space permits.
+Settings drawer has opaque readable controls and scrolls within the window.
+No graph arrangement was reset to make the user's saved layout resemble the
+capture. Screenshot uses an isolated real-data review with factory settings:
+Screenshots/CleanClusterView.png (1906 x 1025 physical pixels).
+Factory preset: Assets/InspectorTool/Editor/QuantumInspectorCleanDefaults.asset.
+Menu: Tools > Quantum Inspector > Open > Clustered Graph.
+
+Scope/limits: one actual Windows/Unity version and captured floating size were
+reviewed. Exhaustive DPI, smallest docked size, keyboard/screen-reader and
+human usability studies remain release checks. No new FPS, allocation or GPU
+performance claim is made; earlier measured rendering limits remain in the
+Cosmic Nebula and cluster motion reports. Dense stress packing may retain tight
+dot spacing to preserve every member within the bounded family enclosure.

@@ -1,0 +1,47 @@
+Cluster manipulation, window resizing and dot size - 13 October 2026
+
+Unity 6000.3.7f1, UI Toolkit, actual DenseComponentFixture prefab and the
+existing InspectorWheelWindow. Pointer events were dispatched through the
+real attached controls, not just their geometry helper functions.
+
+Passed:
+- Category header drag selects the category and moves its header, enclosure,
+  and all 34 loaded nodes in the selected Scripts family with the pointer.
+- Dragging empty space in the same enclosure moves the category through
+  the viewport hit-test path. Individual dots remain individually movable.
+- Unrelated positions and the camera remain unchanged by a category drag.
+- Category positions and overview offsets survive save/reopen and a zoom
+  round trip. Saved-node and window-handoff paths carry the offset.
+- Locked investigation continues to allow deliberate category manipulation.
+- Default dot diameter is exactly 2x the previous size. Toolbar slider tested
+  at 1x, 2x and 3x; supported range 1x-6x. Personal preference persists without
+  changing graph positions. The settings preset exposes the default separately.
+- Floating window has eight border/corner handles. Pointer dragging shrinks
+  and enlarges the window within its screen area. Minimum dimensions retain
+  the opposite border. Graph selection and camera remain intact.
+- Graph/details divider hit width is now 16 logical pixels.
+- Window handles live in a disposable layer and hide in docked windows;
+  Unity's native outer docking dividers remain responsible for dock resizing.
+- 29 existing selection, identity, lock, theme, motion and suspension assertions
+  pass, as do the 2,000-member overview and relationship stroke checks.
+- Final source compilation has no errors or warnings.
+
+Fixes discovered in live verification:
+- Packed and overflow category presentation previously overrode a direct drag.
+  Both paths now retain category movement in their displayed bounds.
+- Selection summary height changed the viewport while dragging. It now reserves
+  a consistent 74-pixel area; full relationship text remains in its tooltip.
+- Window growth is bounded by the actual usable screen area. Resize checks
+  exercise shrink/grow within that boundary rather than exceeding it.
+- Native Painter2D geometry overflow was observed for very long off-screen
+  relationship paths. All paths now clip to the viewport before tessellation,
+  including sparse graphs. A million-unit reference test bounds the output.
+
+Fixtures, original graph state, selection locks and preference values were
+restored after verification. No component or scene transform edits were used
+to achieve the presentation changes. No end-to-end frame-rate claim is made.
+Screenshot-based visual review of the EditorWindow remains unverified.
+
+Reproduce: QuantumGraphManipulationVerification.Begin(), allow a UI frame,
+GraphControls(), ResizeControls(), then Close() to restore the fixture and
+personal settings. These are Editor-only verification helpers.

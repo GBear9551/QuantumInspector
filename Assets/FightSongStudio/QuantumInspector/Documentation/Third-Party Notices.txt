@@ -1,0 +1,17 @@
+QUANTUM INSPECTOR - THIRD-PARTY NOTICES
+
+The publisher has confirmed permission to redistribute the included demo content.
+No separately bundled third-party library has been identified in the tool or demo
+source audit. This statement is not a license for unrelated project content.
+
+Unity Editor and Universal RP are external Unity dependencies and are not
+redistributed as part of this tool. Their own terms and package license notices
+apply. The sample was developed with Universal RP 17.3.0.
+
+Unity Pipeline, Unity CLI, Asset Store Tools and PDF-generation libraries are
+development tools and must not be included in the uploaded asset contents.
+
+If additional third-party files are added, update this notice and include their
+required license and attribution files before distributing them.
+
+Support: gbear9551@gmail.com

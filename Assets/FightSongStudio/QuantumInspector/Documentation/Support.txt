@@ -1,0 +1,10 @@
+QUANTUM INSPECTOR SUPPORT
+Developed by Gary Lougheed & Astra
+Email: gbear9551@gmail.com
+
+Please include your Unity version, operating system, render pipeline/package
+version, reproduction steps and relevant Console messages. A small reproduction
+project is useful. Remove private source code, credentials and unrelated content.
+
+Tested release-candidate environment: Unity 6000.3.7f1 on Windows, URP 17.3.0.
+No response-time guarantee is specified.

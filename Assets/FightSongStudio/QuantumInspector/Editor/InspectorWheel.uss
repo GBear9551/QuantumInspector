@@ -1,0 +1,246 @@
+.quantum-root { flex-grow: 1; min-width: 0; min-height: 0; overflow: hidden; background-color: #060b18; color: #dcefff; }
+.wheel-header-controls, .wheel-tools { display: none; }
+.wheel-mode .wheel-header-controls { display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; min-width: 0; }
+.wheel-mode .wheel-tools { display: flex; flex-shrink: 0; margin: 2px; min-height: 26px; }
+.wheel-mode .graph-header-auxiliary, .wheel-mode .quantum-eyebrow { display: none; }
+.wheel-mode .quantum-header { flex-direction: column; flex-wrap: nowrap; align-items: stretch; padding: 5px 8px; }
+.wheel-mode .quantum-brand { flex-grow: 0; margin-bottom: 3px; }
+.wheel-mode .quantum-title { font-size: 13px; letter-spacing: 1px; }
+.wheel-mode .quantum-header Button { min-width: 0; min-height: 26px; padding: 3px 8px; margin: 2px; font-size: 12px; -unity-font-style: bold; color: #e8f7ff; }
+.wheel-mode .quantum-header .navigation-tab { min-width: 0; padding: 3px 8px; font-size: 12px; }
+.wheel-mode .quantum-header .active-tab { background-color: #1c5067; border-color: #65e7fb; color: #ffffff; }
+.wheel-mode .quantum-navigation { padding: 1px 8px; }
+.wheel-mode .quantum-breadcrumb { color: #b7d3e8; font-size: 11px; -unity-font-style: bold; margin: 2px; }
+.wheel-mode .quantum-footer { height: 24px; padding: 3px 10px; }
+.wheel-mode .quantum-hint { display: none; }
+.wheel-mode .quantum-status { font-size: 11px; color: #c3e9fa; }
+.wheel-compact .wheel-native-shortcut { display: none; }
+.wheel-narrow .quantum-brand { margin-bottom: 2px; }
+.wheel-narrow .quantum-header Button, .wheel-narrow .quantum-header .navigation-tab { min-height: 23px; padding: 2px 5px; margin: 1px; font-size: 11px; }
+.quantum-wheel .quantum-node .node-name { font-size: 13px; -unity-font-style: bold; color: #f3fbff; white-space: normal; max-height: 34px; }
+.quantum-wheel .node-meta { font-size: 10px; color: #bed6e8; }
+.quantum-wheel .hub-subtitle { font-size: 11px; -unity-font-style: bold; color: #bdd8e9; }
+.quantum-wheel .hub-count { font-size: 12px; -unity-font-style: bold; color: #a5edff; }
+.quantum-root .quantum-wheel .quantum-hub Button { font-size: 11px; -unity-font-style: bold; color: #e4f6ff; }
+.graph-header-compact { display: none; flex-direction: row; align-items: center; flex-shrink: 0; }
+.graph-clean .graph-header-compact { display: flex; }
+.graph-clean .graph-header-auxiliary, .graph-clean .quantum-navigation, .graph-clean .quantum-footer { display: none; }
+.graph-clean .quantum-header { padding: 4px 8px; }
+.graph-clean .quantum-eyebrow { display: none; }
+.graph-clean .quantum-title { font-size: 13px; letter-spacing: 1px; }
+.graph-clean .quantum-brand { min-width: 150px; }
+.graph-clean .quantum-header Button { padding: 3px 8px; margin: 2px; font-size: 12px; min-height: 24px; }
+.graph-header-compact .active-tab { background-color: #174258; border-color: #65e7fb; }
+.graph-compact-toolbar { flex-direction: row; align-items: center; flex-shrink: 0; padding: 2px; }
+.graph-compact-toolbar .graph-search { width: 150px; height: 26px; margin: 2px 5px; }
+.graph-compact-toolbar Button { min-height: 24px; padding: 3px 8px; margin: 2px; }
+.graph-settings-panel { position: absolute; right: 8px; top: 8px; bottom: 8px; width: 340px; max-width: 95%; padding: 10px; background-color: #0c1327; border-width: 1px; border-color: #40536c; border-radius: 9px; overflow: hidden; }
+.graph-settings-heading { flex-direction: row; align-items: center; justify-content: space-between; flex-shrink: 0; }
+.graph-settings-heading > Label { font-size: 13px; -unity-font-style: bold; color: #e6efff; }
+.graph-settings-panel ScrollView { flex-grow: 1; min-height: 0; }
+.graph-settings-panel .unity-scroll-view__content-container > Label { white-space: normal; color: #9babc5; font-size: 12px; margin-top: 10px; margin-bottom: 5px; }
+.graph-settings-panel .graph-settings-selection { color: #e6efff; }
+.graph-preferences-form { flex-direction: column; }
+.graph-preferences-form .unity-base-field { margin: 4px 0; min-height: 24px; min-width: 0; }
+.graph-settings-panel .unity-base-field__label { min-width: 82px; color: #e6efff; font-size: 12px; }
+.graph-settings-panel .unity-toggle__text { color: #e6efff; font-size: 12px; }
+.graph-settings-panel .unity-enum-field__input { background-color: #152034; color: #e6efff; border-color: #40536c; border-width: 1px; min-height: 24px; }
+.quantum-header { flex-direction: row; flex-wrap: wrap; align-items: center; padding: 12px 18px; border-bottom-width: 1px; border-bottom-color: #203856; background-color: #091222; }
+.quantum-brand { flex-grow: 1; }
+.quantum-eyebrow { color: #67b9da; font-size: 10px; letter-spacing: 3px; }
+.quantum-title { color: #e4f9ff; font-size: 19px; -unity-font-style: bold; letter-spacing: 2px; }
+.quantum-body { flex-grow: 1; flex-basis: 0; min-height: 0; min-width: 0; flex-direction: row; overflow: hidden; }
+.quantum-header, .quantum-navigation, .quantum-footer { flex-shrink: 0; min-width: 0; }
+.quantum-navigation Button { flex-shrink: 0; }
+.quantum-navigation { background-color: #0a1529; border-bottom-width: 1px; border-bottom-color: #203856; padding: 5px 12px; }
+.quantum-tabs { flex-direction: row; align-items: center; flex-wrap: wrap; }
+.quantum-tabs .navigation-tab { min-width: 112px; font-size: 13px; padding: 7px 16px; -unity-font-style: bold; }
+.quantum-tabs .active-tab { background-color: #174258; border-color: #65e7fb; color: #ffffff; }
+.quantum-breadcrumb { color: #9ec9df; font-size: 11px; overflow: hidden; text-overflow: ellipsis; margin: 3px 6px; }
+.hub-switch { font-size: 10px; }
+.quantum-wheel { flex-grow: 1; flex-basis: 0; min-width: 0; min-height: 0; overflow: hidden; }
+.quantum-stage { position: absolute; width: 640px; height: 640px; transform-origin: 0 0; }
+.quantum-hub { position: absolute; left: 203px; top: 203px; width: 234px; height: 234px; border-radius: 117px; border-width: 2px; border-color: #35caed; background-color: #0b1830; align-items: center; justify-content: center; padding: 14px; }
+.quantum-hub .hub-symbol { color: #62e5ff; font-size: 14px; -unity-text-align: middle-center; }
+.quantum-hub .hub-name { font-size: 19px; -unity-font-style: bold; color: #ecfaff; white-space: normal; -unity-text-align: middle-center; max-height: 48px; overflow: hidden; }
+.quantum-hub .hub-subtitle { font-size: 10px; color: #8cacc7; margin-top: 2px; margin-bottom: 4px; max-width: 190px; overflow: hidden; text-overflow: ellipsis; }
+.quantum-search { width: 178px; height: 26px; min-height: 26px; flex-direction: row; align-items: center; margin-bottom: 6px; background-color: #050c1b; border-color: #387798; border-width: 1px; border-radius: 5px; }
+.search-magnifier { width: 16px; height: 16px; flex-shrink: 0; margin-left: 6px; margin-right: 4px; }
+.quantum-search TextField { flex-grow: 1; min-width: 0; margin: 0; }
+.quantum-search .unity-base-field__input { background-color: transparent; background-image: none; color: #d3f5ff; border-width: 0; padding: 1px 0; }
+.quantum-root .quantum-search .search-clear { width: 20px; height: 20px; padding: 0; margin: 0 2px; border-width: 0; background-color: transparent; background-image: none; font-size: 14px; }
+.hub-count { color: #70e1fb; font-size: 11px; }
+.hub-history, .hub-component-actions { flex-direction: row; margin-top: 0; flex-shrink: 0; }
+.quantum-root .quantum-hub Button { margin: 2px; padding: 2px 7px; font-size: 10px; max-width: 174px; overflow: hidden; text-overflow: ellipsis; }
+.quantum-root .quantum-hub .hub-parent { color: #a0dbea; max-width: 180px; }
+.quantum-root Button { background-color: #12283d; color: #bdefff; border-color: #315c78; border-width: 1px; border-radius: 5px; padding: 5px 10px; margin: 3px; }
+.quantum-root Button:hover { background-color: #204762; border-color: #68d5ec; color: white; }
+.quantum-root Button:disabled { opacity: .4; }
+.quantum-root Toggle { color: #a7d8eb; margin: 5px; }
+.quantum-node { position: absolute; width: 112px; height: 112px; border-radius: 64px; border-width: 2px; border-color: #788ba9; background-color: #0d1a30; align-items: center; justify-content: center; padding: 10px; }
+.quantum-node.compact { width: 94px; height: 94px; }
+.quantum-node.large { width: 128px; height: 128px; }
+.quantum-node:hover { background-color: #203553; }
+.quantum-node.selected { background-color: #173653; border-width: 3px; border-color: #e1faff; }
+.quantum-node .node-name { color: #e9f5ff; -unity-text-align: middle-center; font-size: 11px; max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
+.asset-preview { height: 100px; margin-bottom: 8px; }
+.node-glyph { font-size: 22px; -unity-font-style: bold; color: #c0d8ff; }
+.node-meta { font-size: 9px; color: #8faec9; margin-top: 4px; max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
+.node-icon { width: 24px; height: 24px; flex-shrink: 0; }
+.alias-fields { margin-top: 8px; margin-bottom: 10px; }
+.alias-fields .unity-base-field__label { min-width: 82px; }
+.alias-editor { padding: 16px; }
+.category-transform { border-color: #53f5ed; }
+.category-rendering { border-color: #428fff; }
+.category-physics { border-color: #88ef91; }
+.category-audio { border-color: #ffbd60; }
+.category-script { border-color: #bd85ff; }
+.category-missing { border-color: #ef697b; }
+.quantum-footer { height: 48px; padding: 8px 16px; align-self: stretch; overflow: hidden; border-top-width: 1px; border-top-color: #203856; background-color: #091222; }
+.quantum-hint { color: #7299b7; font-size: 10px; }
+.quantum-credit { height: 22px; min-height: 22px; flex-shrink: 0; padding: 2px 10px; margin: 0; background-color: #091222; color: #a8c6db; font-size: 11px; -unity-font-style: bold; -unity-text-align: middle-center; }
+.quantum-status { color: #9cdcf1; font-size: 11px; }
+.quantum-footer > Label { align-self: stretch; min-width: 0; flex-shrink: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.quantum-panels { width: 320px; flex-shrink: 0; min-width: 0; min-height: 0; border-left-width: 1px; border-left-color: #274764; background-color: #0b1425; padding: 8px; }
+.quantum-panels.wide { width: 420px; }
+.quantum-body .quantum-workspace { min-width: 340px; }
+.quantum-body .quantum-panels { min-width: 240px; }
+.quantum-body .unity-two-pane-split-view__dragline-anchor { width: 16px; margin-left: -8px; cursor: resize-horizontal; }
+.quantum-body .unity-two-pane-split-view__dragline { width: 2px; margin-left: 7px; background-color: #315c78; }
+.quantum-body .unity-two-pane-split-view__dragline-anchor:hover > .unity-two-pane-split-view__dragline,
+.quantum-body .unity-two-pane-split-view__dragline-anchor.resizing > .unity-two-pane-split-view__dragline { background-color: #68d5ec; }
+.research-panel { margin-bottom: 12px; padding: 10px; background-color: #0e1d31; border-radius: 7px; border-top-width: 1px; border-top-color: #3f688a; }
+.research-title { font-size: 13px; -unity-font-style: bold; color: #6de4ff; margin-bottom: 8px; }
+.research-line { color: #a8c4dc; font-size: 11px; white-space: normal; margin-bottom: 5px; }
+.research-value { color: #e1f2ff; white-space: normal; margin-bottom: 6px; }
+.research-actions { flex-direction: row; flex-wrap: wrap; }
+.research-link { margin-top: 5px; padding: 6px; border-left-width: 2px; border-left-color: #9878df; background-color: #101a32; }
+.relationship-hierarchy { border-left-color: #46dceb; }
+.relationship-event { border-left-color: #ffc367; }
+.relationship-dependency { border-left-color: #81dd91; }
+.relationship-instrumented { border-left-color: #ff78ca; }
+.relationship-scriptableobject { border-left-color: #4f9cff; }
+.research-graph { height: 210px; margin-bottom: 10px; }
+.quantum-empty { color: #f0c983; font-size: 11px; }
+.quantum-hidden { display: none; }
+.quantum-panels .unity-scroll-view__content-container { min-width: 0; }
+.quantum-property-editor { min-width: 0; margin: 6px 0; }
+.quantum-property-editor .unity-base-field { min-width: 0; }
+.quantum-property-editor .unity-base-field__label { min-width: 76px; max-width: 130px; flex-shrink: 1; overflow: hidden; text-overflow: ellipsis; }
+.quantum-property-editor .unity-base-field__input { min-width: 0; }
+.component-catalog { height: 330px; min-height: 180px; margin: 6px 0; }
+.quantum-search.catalog-search { width: auto; min-width: 0; align-self: stretch; }
+.hub-component-actions .active-tab { border-color: #ffd18b; background-color: #382b26; }
+.component-catalog Button { white-space: normal; -unity-text-align: middle-left; }
+.quantum-node.removable { border-color: #ffd18b; background-color: #382b26; }
+.quantum-node.removal-blocked { background-color: #111825; border-color: #3a4859; }
+.quantum-node.removal-blocked .node-name { color: #8093a8; }
+.quantum-focus-ghost { position: absolute; width: 112px; height: 112px; border-radius: 60px; border-width: 2px; border-color: #adf5ff; background-color: #14314c; padding: 12px; align-items: center; justify-content: center; }
+.quantum-focus-ghost .node-name { font-size: 11px; color: #edfcff; max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
+
+.quantum-workspace { flex-grow: 1; flex-basis: 0; min-width: 0; min-height: 0; overflow: hidden; }
+.quantum-graph-workspace { flex-grow: 1; flex-basis: 0; min-width: 0; min-height: 0; overflow: hidden; }
+.graph-toolbar { flex-direction: row; flex-wrap: wrap; align-items: center; flex-shrink: 0; padding: 2px 5px; background-color: #0a1728; border-bottom-width: 1px; border-bottom-color: #203856; }
+.graph-toolbar Button { font-size: 11px; padding: 4px 6px; margin: 2px; }
+.graph-toolbar Toggle { font-size: 11px; margin: 3px 8px; }
+.graph-toolbar ToolbarMenu { font-size: 11px; min-height: 24px; }
+.graph-toolbar .graph-search { width: 150px; margin: 2px; }
+.graph-progress { flex-grow: 1; flex-basis: 120px; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #9babc5; font-size: 11px; margin: 4px; }
+.quantum-graph-viewport { flex-grow: 1; flex-basis: 0; min-height: 0; min-width: 0; overflow: hidden; background-color: #060d1b; }
+.quantum-graph-node { position: absolute; left: 0; top: 0; border-width: 1px; border-radius: 12px; background-color: #102139; color: #e6f7ff; padding: 8px 26px 8px 30px; justify-content: center; overflow: hidden; }
+.quantum-graph-node:hover { background-color: #1d3b55; border-width: 2px; }
+.quantum-graph-node.graph-selected { background-color: #21475e; border-width: 3px; }
+.quantum-graph-node.graph-cluster { border-radius: 18px; background-color: #112b3c; }
+.quantum-graph-node.graph-cluster-selected { background-color: #25506b; border-width: 3px; }
+.quantum-graph-node.graph-pinned { border-bottom-width: 4px; }
+.quantum-graph-node.graph-match { background-color: #40512c; border-width: 3px; }
+.quantum-graph-node.graph-dim { opacity: .4; }
+.graph-node-title { -unity-font-style: bold; white-space: normal; overflow: visible; flex-shrink: 0; }
+.graph-node-subtitle { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #a2c4d5; margin-top: 2px; }
+.graph-node-glyph, .graph-node-icon { position: absolute; left: 6px; top: 9px; width: 20px; height: 22px; font-size: 16px; -unity-text-align: middle-center; }
+.quantum-root .graph-node-expand { position: absolute; right: 3px; top: 3px; width: 20px; height: 20px; padding: 0; margin: 0; font-size: 13px; background-color: #143448; }
+.graph-node-resize { position: absolute; right: 3px; bottom: 3px; width: 14px; height: 14px; border-right-width: 2px; border-bottom-width: 2px; border-right-color: #6d98b5; border-bottom-color: #6d98b5; cursor: resize-up-left; }
+.graph-node-resize:hover { border-right-color: #c3f4ff; border-bottom-color: #c3f4ff; }
+.quantum-graph-node.graph-compact { padding: 3px 20px 3px 5px; border-radius: 8px; }
+.graph-compact .graph-node-glyph, .graph-compact .graph-node-icon { display: none; }
+.graph-legend { font-size: 11px; color: #a2c4d5; padding: 3px 8px; white-space: normal; flex-shrink: 0; }
+.graph-relationship-detail { font-size: 11px; color: #d3e7ef; padding: 3px 8px; white-space: normal; height: 74px; min-height: 74px; max-height: 74px; overflow: hidden; flex-shrink: 0; }
+.quantum-graph-node.graph-asset { padding-bottom: 64px; }
+.graph-node-preview { position: absolute; width: 48px; height: 48px; left: 30px; bottom: 8px; }
+.graph-light .quantum-graph-viewport { background-color: #e9eef3; }
+.graph-light .graph-toolbar { background-color: #dae3ed; border-bottom-color: #a7b6c6; }
+.graph-light .quantum-graph-node { background-color: #f8fafc; color: #162b40; }
+.graph-light .quantum-graph-node.graph-cluster { background-color: #d8e5ef; }
+.graph-light .quantum-graph-node.graph-selected, .graph-light .quantum-graph-node.graph-cluster-selected { background-color: #bedbeb; }
+.graph-light .graph-node-subtitle, .graph-light .graph-legend, .graph-light .graph-relationship-detail, .graph-light .graph-progress { color: #263e54; }
+.quantum-root .graph-light Button, .quantum-root .graph-light Toggle, .graph-light .unity-base-field { color: #1e3b51; }
+.quantum-root .graph-light Button { background-color: #dce8ef; border-color: #738da2; }
+.graph-light .graph-search { background-color: #f6f8fb; }
+.graph-light .graph-search .unity-base-field__input { color: #16334c; }
+.graph-light .graph-legend, .graph-light .graph-relationship-detail { background-color: #e9eef3; }
+.graph-light .unity-toggle__label { color: #263e54; }
+.graph-edge-count { position: absolute; font-size: 11px; color: #d5eaf7; background-color: #0c192a; padding: 1px 3px; border-radius: 3px; }
+.graph-light .graph-edge-count { color: #243a4d; background-color: #eef3f8; }
+
+.graph-art-layer, .graph-node-surface { position: absolute; left: 0; top: 0; right: 0; bottom: 0; }
+.graph-nebula-backdrop { position: absolute; left: -8px; top: -8px; right: -8px; bottom: -8px; }
+.graph-toolbar .unity-enum-field { min-width: 90px; max-width: 160px; margin: 3px; }
+.graph-toolbar .unity-enum-field__input { background-color: #152034; color: #e6efff; border-width: 1px; border-color: #40536c; min-height: 22px; }
+.graph-cosmic .quantum-graph-viewport { background-color: #070b18; }
+.graph-cosmic .quantum-graph-node { background-color: #0c1327; border-radius: 9px; }
+.graph-cosmic .quantum-graph-node:hover { border-width: 1px; }
+.graph-cosmic .quantum-graph-node.graph-cluster { border-radius: 20px; }
+.graph-cosmic .quantum-graph-node.graph-owner { border-radius: 5px; border-width: 2px; }
+.graph-cosmic .quantum-graph-node.graph-selected { border-width: 3px; }
+.graph-cosmic .quantum-graph-node.graph-disabled { border-left-width: 4px; }
+.quantum-graph-node.graph-missing { border-left-width: 5px; }
+.graph-cosmic .quantum-graph-node.graph-pinned { border-bottom-width: 4px; }
+.graph-cosmic .graph-node-subtitle { color: #9babc5; }
+.graph-toolbar .graph-dot-size { min-width: 175px; max-width: 210px; margin: 3px; }
+.graph-dot-size .unity-base-field__label { min-width: 54px; margin-right: 4px; color: #e6efff; }
+.graph-dot-size .unity-base-field__input { min-width: 90px; }
+.graph-dot-size .unity-base-text-field__input { min-width: 32px; color: #e6efff; background-color: #152034; }
+.quantum-window-resize-border { position: absolute; left: 0; right: 0; top: 0; bottom: 0; }
+.quantum-window-resize-handle { position: absolute; background-color: transparent; }
+.quantum-window-resize-handle:hover, .quantum-window-resize-handle.resizing { background-color: rgba(104, 213, 236, 0.16); }
+.quantum-window-resize-handle.resize-left { left: 0; top: 12px; bottom: 12px; width: 7px; cursor: resize-horizontal; }
+.quantum-window-resize-handle.resize-right { right: 0; top: 12px; bottom: 12px; width: 7px; cursor: resize-horizontal; }
+.quantum-window-resize-handle.resize-top { top: 0; left: 12px; right: 12px; height: 7px; cursor: resize-vertical; }
+.quantum-window-resize-handle.resize-bottom { bottom: 0; left: 12px; right: 12px; height: 7px; cursor: resize-vertical; }
+.quantum-window-resize-handle.resize-left.resize-top, .quantum-window-resize-handle.resize-right.resize-top,
+.quantum-window-resize-handle.resize-left.resize-bottom, .quantum-window-resize-handle.resize-right.resize-bottom { width: 12px; height: 12px; }
+.quantum-window-resize-handle.resize-left.resize-top { left: 0; top: 0; right: auto; bottom: auto; cursor: resize-up-left; }
+.quantum-window-resize-handle.resize-right.resize-top { right: 0; top: 0; left: auto; bottom: auto; cursor: resize-up-right; }
+.quantum-window-resize-handle.resize-left.resize-bottom { left: 0; bottom: 0; right: auto; top: auto; cursor: resize-up-right; }
+.quantum-window-resize-handle.resize-right.resize-bottom { right: 0; bottom: 0; left: auto; top: auto; cursor: resize-up-left; }
+.graph-cosmic .graph-legend { color: #9babc5; background-color: #0c1327; }
+.graph-cosmic .graph-relationship-detail { color: #e6efff; background-color: #0c1327; }
+.graph-light .graph-toolbar .unity-enum-field__input { background-color: #f8fafc; color: #162b40; border-color: #738da2; }
+
+.quantum-root .quantum-hub .hub-inspect-component { background-color: #23546b; border-top-color: #8af0ff; border-left-color: #62ccdf; border-right-color: #173549; border-bottom-color: #102637; min-height: 25px; color: #f0fdff; }
+.orbital-inspector { position: absolute; overflow: hidden; background-color: #132436; border-width: 2px; border-top-color: #a1eff4; border-left-color: #548797; border-right-color: #12222d; border-bottom-color: #040c14; padding: 5px; }
+.orbital-inspector-rim { flex-grow: 1; min-height: 0; border-radius: 13px; border-width: 1px; border-top-color: #263c4d; border-left-color: #263c4d; border-right-color: #6b9aa4; border-bottom-color: #527987; background-color: #101d2b; overflow: hidden; }
+.orbital-inspector-content { flex-grow: 1; min-height: 0; padding: 10px; }
+.orbital-inspector-navigation { flex-direction: row; align-items: center; flex-shrink: 0; margin-bottom: 7px; }
+.quantum-root .orbital-inspector-navigation > Button { min-height: 28px; margin: 0 5px 0 0; }
+.quantum-root .orbital-inspector-navigation > #orbitalInspectorReturn { margin-left: auto; margin-right: 0; background-color: #21485a; border-top-color: #7fc4d4; border-bottom-color: #0b1923; }
+.orbital-inspector-title { font-size: 17px; -unity-font-style: bold; color: #eefaff; white-space: normal; flex-shrink: 0; margin: 0 3px; }
+.orbital-inspector-context { font-size: 11px; color: #a0bbc8; margin: 3px 3px 10px; flex-shrink: 0; overflow: hidden; text-overflow: ellipsis; }
+.orbital-native-body { flex-grow: 1; min-height: 0; border-width: 1px; border-top-color: #0a1017; border-left-color: #0a1017; border-right-color: #4a5964; border-bottom-color: #4a5964; border-radius: 5px; padding: 4px; background-color: #383838; color: #d2d2d2; }
+.orbital-native-body > .unity-scroll-view__content-viewport > .unity-scroll-view__content-container { min-width: 0; }
+.quantum-root .orbital-native-body Button { background-color: #585858; color: #dedede; border-color: #303030; border-radius: 3px; padding: 2px 6px; margin: 2px; }
+.quantum-root .orbital-native-body Button:hover { background-color: #676767; border-color: #707070; }
+.quantum-root .orbital-native-body Toggle { color: #d2d2d2; margin: 0; }
+.orbital-native-body.orbital-native-light { background-color: #c2c2c2; color: #222222; }
+.quantum-root .orbital-native-light Button { background-color: #e4e4e4; color: #222222; border-color: #939393; }
+.quantum-root .orbital-native-light Toggle { color: #222222; }
+
+.graph-component-inspector { position: absolute; padding: 7px; min-width: 0; min-height: 0; overflow: hidden; border-width: 2px; border-top-color: #9edfea; border-left-color: #557b90; border-right-color: #172b3c; border-bottom-color: #08131d; border-radius: 10px; background-color: #142333; }
+.graph-inspector-heading { flex-direction: row; align-items: center; flex-shrink: 0; }
+.graph-inspector-title { flex-grow: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; color: #effaff; font-size: 13px; -unity-font-style: bold; }
+.quantum-root .graph-inspector-heading > Button { flex-shrink: 0; padding: 2px 8px; margin: 0 0 0 4px; }
+.graph-inspector-owner { flex-shrink: 0; color: #a4c3d3; font-size: 11px; overflow: hidden; text-overflow: ellipsis; margin: 4px 1px 8px; }
+
+.graph-compact-toolbar, .graph-header-compact { flex-wrap: wrap; min-width: 0; }
+#graphSettingsPanel #wheelFontScale, #graphSettingsPanel #nodeFontSize, #graphSettingsPanel #buttonFontSize { flex-shrink: 0; margin: 5px 0; }
+#graphSettingsPanel #wheelFontScale > .unity-base-field__label, #graphSettingsPanel #nodeFontSize > .unity-base-field__label, #graphSettingsPanel #buttonFontSize > .unity-base-field__label { min-width: 140px; }

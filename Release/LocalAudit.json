@@ -1,0 +1,14 @@
+{
+    "unityVersion": "6000.3.7f1",
+    "assetCount": 124,
+    "compileFailed": false,
+    "missingMeta": [],
+    "longPaths": [],
+    "externalAssets": [],
+    "packageDependencies": [
+        "Packages/com.unity.render-pipelines.universal",
+        "Packages/com.unity.render-pipelines.core"
+    ],
+    "executables": [],
+    "scriptsWithoutNamespace": []
+}

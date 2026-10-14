@@ -1,0 +1,10 @@
+var animator = UnityEngine.Object.FindFirstObjectByType<FightSongStudio.QuantumInspector.Demo.DemoLabAnimator>();
+var state = new UnityEditor.SerializedObject(animator);
+var rotor = (UnityEngine.Transform)state.FindProperty("rotors").GetArrayElementAtIndex(0).FindPropertyRelative("target").objectReferenceValue;
+var arm = UnityEngine.Object.FindFirstObjectByType<FightSongStudio.QuantumInspector.Demo.DemoRoboticArm>();
+var joint = (UnityEngine.Transform)new UnityEditor.SerializedObject(arm).FindProperty("joints").GetArrayElementAtIndex(1).objectReferenceValue;
+UnityEditor.SessionState.SetVector3("QI.Demo.Test.Rotor", rotor.localEulerAngles);
+UnityEditor.SessionState.SetVector3("QI.Demo.Test.Joint", joint.localEulerAngles);
+UnityEditor.SessionState.SetFloat("QI.Demo.Test.Time", animator.SimulationTime);
+UnityEditor.SessionState.SetInt("QI.Demo.Test.Frame", UnityEngine.Time.frameCount);
+return new {playing = UnityEditor.EditorApplication.isPlaying, frame=UnityEngine.Time.frameCount, simulationTime=animator.SimulationTime, rotor=rotor.localEulerAngles, joint=joint.localEulerAngles};

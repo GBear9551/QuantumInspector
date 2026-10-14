@@ -1,0 +1,309 @@
+{
+  "date": "2026-10-13",
+  "unity": "6000.3.7f1",
+  "pipeline": "Universal Render Pipeline 17.3.0",
+  "hardware": {
+    "cpu": "12th Gen Intel(R) Core(TM) i9-12900",
+    "gpu": "NVIDIA GeForce RTX 3070",
+    "systemMemoryMB": 65222
+  },
+  "coreChecks": [
+    {
+      "entryPoint": "try{return FightSong.InspectorTool.QuantumGraphConstellationVerification.Run();}catch(System.Exception ex){return ex.ToString();}",
+      "result": {
+        "passed": true,
+        "assertions": 50,
+        "unity": "6000.3.7f1",
+        "cpu": "12th Gen Intel(R) Core(TM) i9-12900",
+        "memoryMB": 65222,
+        "gpu": "NVIDIA GeForce RTX 3070",
+        "benchmarks": [
+          {
+            "members": 100,
+            "nodes": 108,
+            "edges": 224,
+            "initialLayoutMs": 0.4062,
+            "measurementMs": 0.02,
+            "placementMs": 0.34240000000000004,
+            "indexMs": 0.0427,
+            "idleMotionCalls": 10000,
+            "idleMotionMs": 0.0236,
+            "allocationCounterSupported": false,
+            "idleMotionAllocatedBytes": null,
+            "motion": "Off",
+            "visible": "not attached to a viewport; math benchmark"
+          },
+          {
+            "members": 500,
+            "nodes": 508,
+            "edges": 1124,
+            "initialLayoutMs": 15.292300000000001,
+            "measurementMs": 13.946000000000002,
+            "placementMs": 1.1568,
+            "indexMs": 0.18810000000000002,
+            "idleMotionCalls": 10000,
+            "idleMotionMs": 0.0236,
+            "allocationCounterSupported": false,
+            "idleMotionAllocatedBytes": null,
+            "motion": "Off",
+            "visible": "not attached to a viewport; math benchmark"
+          },
+          {
+            "members": 2000,
+            "nodes": 2008,
+            "edges": 4499,
+            "initialLayoutMs": 61.2577,
+            "measurementMs": 56.408100000000005,
+            "placementMs": 4.1474,
+            "indexMs": 0.7002,
+            "idleMotionCalls": 10000,
+            "idleMotionMs": 0.0235,
+            "allocationCounterSupported": false,
+            "idleMotionAllocatedBytes": null,
+            "motion": "Off",
+            "visible": "not attached to a viewport; math benchmark"
+          }
+        ]
+      }
+    },
+    {
+      "entryPoint": "try{return FightSong.InspectorTool.QuantumGraphVerification.Run();}catch(System.Exception ex){return ex.ToString();}",
+      "result": {
+        "passed": true,
+        "components": 33,
+        "expandedArrayNodes": 10026,
+        "clusters": true,
+        "customRules": true,
+        "stableLayout": true,
+        "preciseReferences": true,
+        "localAndEntireProject": true,
+        "progressiveExpansion": true,
+        "persistentLayout": true,
+        "mouseCenteredZoom": true,
+        "parameterEditor": true,
+        "investigationLock": true,
+        "groupDragging": true,
+        "independentHistory": true,
+        "wheelCapacities": "5–8"
+      }
+    },
+    {
+      "entryPoint": "try{return FightSong.InspectorTool.InspectorWheelNavigationVerification.Run();}catch(System.Exception ex){return ex.ToString();}",
+      "result": {
+        "passed": true,
+        "rotationSamples": 84000,
+        "capacities": "5,6,7,8",
+        "nodeReuse": true,
+        "collisionFreeTransitions": true,
+        "exactScaleFormula": true,
+        "childrenAndParents": true,
+        "projectScope": true,
+        "independentTabHistory": true,
+        "serializedState": true,
+        "movedFolderIdentity": true,
+        "selectionSync": true,
+        "projectSelectionSync": true,
+        "selectionLock": true,
+        "projectGraphSelection": true
+      }
+    },
+    {
+      "entryPoint": "try{return FightSong.InspectorTool.QuantumGraphEdgeVerification.Run();}catch(System.Exception ex){return ex.ToString();}",
+      "result": {
+        "passed": true,
+        "solidVertices": 26,
+        "dashedVertices": 497,
+        "mixedVertices": 523,
+        "thinHeight": 13.5090942,
+        "thickHeight": 17.7163544,
+        "zoomLevels": 4,
+        "selectionEmphasis": true,
+        "serializedThickness": 5,
+        "collapsedLinksHidden": true
+      }
+    }
+  ],
+  "compile": {
+    "errors": 0,
+    "warnings": 0,
+    "compilationFailed": false
+  },
+  "presentation": [
+    {
+      "fixture": "DenseComponentFixture",
+      "nodes": 48,
+      "edges": 89,
+      "motion": "Off",
+      "viewport": [
+        1180,
+        514
+      ],
+      "setupMs": 2.3532,
+      "maximumScheduledTickMs": 10.0911,
+      "inspectionNodes": 20,
+      "inspectionEdges": 65,
+      "panAverageMs": 0.17022,
+      "panMaximumMs": 0.2238,
+      "idleCalls": 1000,
+      "idleViewUpdates": 0,
+      "allocationCounterSupported": false,
+      "allocatedBytes": null
+    },
+    {
+      "passed": true,
+      "unity": "6000.3.7f1",
+      "nodes": 108,
+      "edges": 224,
+      "motion": "Off",
+      "viewportWidth": 1180,
+      "viewportHeight": 514,
+      "setupMs": 5.7346,
+      "slices": 1,
+      "maximumScheduledTickMs": 0.15080000000000002,
+      "maximumTextPreparationSliceMs": 0,
+      "overviewNodes": 8,
+      "overviewEdges": 14,
+      "inspectionNodes": 15,
+      "inspectionEdges": 51,
+      "panAverageMs": 0.12609666666666666,
+      "panMaximumMs": 0.18860000000000002,
+      "allocationCounterSupported": false,
+      "panAllocatedBytesPerAction": null,
+      "idleCalls": 1000,
+      "idleAllocatedBytes": null,
+      "idleViewUpdates": 0,
+      "measurementScope": "Main-thread graph preparation / UI binding only; excludes native paint and GPU frame time"
+    },
+    {
+      "passed": true,
+      "unity": "6000.3.7f1",
+      "nodes": 508,
+      "edges": 1124,
+      "motion": "Off",
+      "viewportWidth": 1180,
+      "viewportHeight": 514,
+      "setupMs": 1.9912,
+      "slices": 7,
+      "maximumScheduledTickMs": 5.9501,
+      "maximumTextPreparationSliceMs": 5.367900000000001,
+      "overviewNodes": 8,
+      "overviewEdges": 14,
+      "inspectionNodes": 40,
+      "inspectionEdges": 220,
+      "panAverageMs": 0.5882100000000002,
+      "panMaximumMs": 1.0369000000000002,
+      "allocationCounterSupported": false,
+      "panAllocatedBytesPerAction": null,
+      "idleCalls": 1000,
+      "idleAllocatedBytes": null,
+      "idleViewUpdates": 0,
+      "measurementScope": "Main-thread graph preparation / UI binding only; excludes native paint and GPU frame time"
+    },
+    {
+      "passed": true,
+      "unity": "6000.3.7f1",
+      "nodes": 2008,
+      "edges": 4499,
+      "motion": "Off",
+      "viewportWidth": 1180,
+      "viewportHeight": 514,
+      "setupMs": 6.6709000000000005,
+      "slices": 22,
+      "maximumScheduledTickMs": 10.3734,
+      "maximumTextPreparationSliceMs": 4.0536,
+      "overviewNodes": 8,
+      "overviewEdges": 14,
+      "inspectionNodes": 45,
+      "inspectionEdges": 733,
+      "panAverageMs": 1.5091766666666666,
+      "panMaximumMs": 1.8588,
+      "allocationCounterSupported": false,
+      "panAllocatedBytesPerAction": null,
+      "idleCalls": 1000,
+      "idleAllocatedBytes": null,
+      "idleViewUpdates": 0,
+      "measurementScope": "Main-thread graph preparation / UI binding only; excludes native paint and GPU frame time"
+    }
+  ],
+  "allocationPositiveControl": {
+    "deliberateAllocationBytes": 1048576,
+    "counterBefore": 0,
+    "counterAfter": 0,
+    "supported": false,
+    "conclusion": "Allocation metrics unavailable; do not interpret counter zeroes as zero allocations."
+  },
+  "liveResize": {
+    "passed": true,
+    "automaticSize": [
+      640,
+      79
+    ],
+    "shrunkSize": [
+      190,
+      176
+    ],
+    "actualTitleHeight": 126,
+    "availableTitleHeight": 126,
+    "persistence": true,
+    "refreshPreserved": true,
+    "automaticRestore": true
+  },
+  "lifecycle": {
+    "passed": true,
+    "playModeAdvanced": true,
+    "editRootUsesGlobalObjectId": true,
+    "playRootUsesSessionIdentity": true,
+    "panBeforeDuringAfter": [
+      83,
+      49
+    ],
+    "zoomBeforeDuringAfter": 0.72,
+    "updateCallbacksPerWindow": 1,
+    "selectionCallbacksPerWindow": 1,
+    "scriptRecompile": true,
+    "callbacksAfterLastWindowClosed": 0,
+    "callbacksAfterWindowReopened": 1,
+    "returnedToEditMode": true,
+    "runInBackgroundRestored": false,
+    "unsavedScenePreserved": true
+  },
+  "prefabStage": {
+    "passed": true,
+    "components": 42,
+    "distinctDurableIds": 42,
+    "stageDirty": false
+  },
+  "palette": {
+    "darkAndLightScreenshots": true,
+    "identicalNodePositionsExpansionPinsAndCamera": true
+  },
+  "projectFixture": {
+    "nodes": 8,
+    "immediateAssets": 6,
+    "immediateFolders": 1,
+    "previewRequests": 12,
+    "pendingPreviews": 0,
+    "leafFileVerified": true
+  },
+  "savedDemo": {
+    "savedSceneExists": true,
+    "gameObjects": 391,
+    "components": 1196,
+    "maxDepth": 8,
+    "subsystems": 7,
+    "missingScripts": 0,
+    "externalAssets": [],
+    "fixtureOwnerComponents": 42,
+    "fixtureObjects": 2,
+    "fixtureHasMesh": true,
+    "fixtureHasMaterial": true
+  },
+  "limitations": [
+    "Viewport timings exclude native paint and GPU frame time.",
+    "The 4 ms scheduler budget is soft; recorded final ticks reached 10.3734 ms and a text slice reached 5.3679 ms.",
+    "Unsliced cold 2000-member layout ranged approximately 61–88 ms across runs.",
+    "No counterbalanced human usability trial performed.",
+    "Fresh-package import, minimum-hardware, broader Unity compatibility and profiler allocation/paint checks remain manual release work.",
+    "Entire-project indexing/edge bundling/voice/3D expansion are outside this upgrade."
+  ]
+}

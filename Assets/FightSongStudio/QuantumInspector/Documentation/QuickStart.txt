@@ -1,0 +1,27 @@
+QUANTUM INSPECTOR - QUICK START - 1.0.0
+Developed by Gary Lougheed & Astra
+
+Tested environment: Unity 6000.3.7f1, Windows.
+Demo dependency: Universal RP 17.3.0 (use a compatible URP project).
+The core Editor tool does not require Unity CLI, Pipeline or Asset Store Tools.
+
+1. Import the tool scripts, settings and styles together and let Unity compile.
+2. Choose Tools > Quantum Inspector > Open.
+3. Select a GameObject in the Hierarchy; choose Wheel or Graph.
+4. Scroll the wheel to rotate. In the graph, drag to pan and scroll to zoom.
+5. Show Info toggles component details and history. Bookmarks stays in the header.
+6. Use Parent, Roots, Back and Forward to navigate.
+7. For the URP sample, save your work and choose Tools > Quantum Inspector > Demo > Open Demo Scene.
+8. Search components in Quantum to filter Unity's Inspector, or use its new
+   Components search field directly. Selecting a component scrolls it into view.
+   See NativeInspectorSearch.txt for lock behavior and compatibility details.
+9. Click folders in the Project window's left tree or items in its right pane
+   to update Quantum. Clicking an already-selected asset works too. Unlock
+   Quantum's Unity selection lock to resume following Project clicks.
+
+Read QuantumInspector-UserGuide.pdf for settings, locks, editing, troubleshooting
+and known limitations. Use Tools > Quantum Inspector > Layouts > Workspace Setup
+for the recommended three-column layout. Arrange native docks manually and save
+the result through Unity's Layouts menu; existing docks are preserved.
+
+Support: gbear9551@gmail.com

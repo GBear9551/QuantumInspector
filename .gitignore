@@ -14,6 +14,8 @@
 # See: https://github.com/github/gitignore/tree/main/Global
 #
 .utmp/
+/.release-tools/
+/tmp/pdfs/
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/

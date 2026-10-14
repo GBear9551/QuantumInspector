@@ -1,0 +1,6 @@
+{
+  "name": "FightSongStudio.QuantumInspector.Demo.Editor",
+  "rootNamespace": "FightSongStudio.QuantumInspector.Demo.Editor",
+  "includePlatforms": ["Editor"],
+  "references": ["FightSongStudio.QuantumInspector.Demo", "Unity.RenderPipelines.Core.Runtime", "Unity.RenderPipelines.Universal.Runtime"]
+}

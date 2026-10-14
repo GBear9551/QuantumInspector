@@ -1,0 +1,19 @@
+QUANTUM INSPECTOR
+1.0.0 - Initial release candidate (not yet submitted)
+
+- Orbital Wheel and clustered graph inspection of Unity objects and assets.
+- Graph follows selected GameObjects unless Unity selection is locked.
+- Project assets and folders update the view even with Investigation Lock enabled;
+  the explicit Unity selection lock still holds the current view.
+- Follows clicks in both Project panes: the left folder tree and right asset
+  list, including reselecting an already-active asset.
+- Responsive wheel header, persistent Bookmarks access and toggled information panel.
+- Component inspection, relationship exploration and navigation history.
+- Living Laboratory URP sample and dense component fixtures.
+- Offline user guide and support information.
+- Footer: Developed by Gary Lougheed & Astra.
+
+- Workspace setup guide using public Editor APIs; existing docks preserved.
+- Organized under FightSongStudio/QuantumInspector with menus under Tools.
+- Native Inspector component search, synchronized Quantum searches and exact
+  component auto-scrolling; preserves Inspector locks and existing custom editors.

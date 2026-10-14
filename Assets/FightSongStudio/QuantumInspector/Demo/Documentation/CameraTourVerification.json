@@ -1,0 +1,37 @@
+[
+    {
+        "checkedView":  1,
+        "positionError":  0.00000584003874,
+        "angleError":  0,
+        "nextView":  2,
+        "settleAfter":  187.3563
+    },
+    {
+        "checkedView":  2,
+        "positionError":  0.0000412291847,
+        "angleError":  0,
+        "nextView":  3,
+        "settleAfter":  192.625656
+    },
+    {
+        "checkedView":  3,
+        "positionError":  0.00003381512,
+        "angleError":  0,
+        "nextView":  4,
+        "settleAfter":  197.758072
+    },
+    {
+        "checkedView":  4,
+        "positionError":  0.0000195850753,
+        "angleError":  0,
+        "nextView":  0,
+        "settleAfter":  202.991119
+    },
+    {
+        "checkedView":  0,
+        "positionError":  0.0000514984131,
+        "angleError":  0,
+        "nextView":  1,
+        "settleAfter":  208.203827
+    }
+]
